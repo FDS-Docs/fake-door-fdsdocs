@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
+
 import {
   Box,
   Button,
   TextField,
   Modal,
-  Typography,
 } from "@mui/material";
 
 import { handleNameChange, handleEmailChange, handleWhatsappChange, validateFields } from "../functions/formHandlers";
@@ -60,18 +60,23 @@ export default function Home() {
       <S.Wrapper>
         <S.ContainerForm>
           <S.Description>
-            <span>Download Our Free Guide:</span>
+            <span>Conheça a solução completa para sua empresa:</span>
 
-            <h1>Maximize Efficiency with Smart Software Solutions</h1>
+            <h1>Sistema de Emissão e Gerenciamento de Documentos de Segurança</h1>
 
-            <p>Discover how our state-of-the-art software can revolutionize your business.</p>
+            <p>
+              Simplifique a criação de Fichas de Dados de Segurança (FDS), Fichas de Emergência e Rótulos GHS com um sistema
+              que une todas as legislações em um único lugar.
+            </p>
           </S.Description>
 
           <S.Form>
             <h2>Seja bem-vindo(a)!</h2>
 
             <S.FormDescription>
-              <p>Quer ser um dos primeiros a conhecer nosso novo sistema de emissão e gerenciamento de documentos de segurança?</p>
+              <p>
+                Quer saber como podemos facilitar a elaboração dos documentos de segurança na sua empresa?
+              </p>
 
               <p>Inscreva-se e fique por dentro!</p>
             </S.FormDescription>
@@ -112,26 +117,26 @@ export default function Home() {
           </S.Form>
         </S.ContainerForm>
 
-
         <Modal
           open={showModal}
           onClose={handleClose}
-          aria-labelledby="success-modal-title"
-          aria-describedby="success-modal-description"
         >
-          <>
-            <p>
+          <S.ContainerModal>
+            <img src="/undraw-modal.svg"/>
+            <h2>
               Inscrição realizada com sucesso!
-            </p>
+            </h2>
 
             <p>
-              Obrigado por se inscrever. Entraremos em contato em breve!
+              Obrigado pelo seu interesse! Entraremos em contato em breve com mais detalhes sobre o sistema.
             </p>
-
-            <Button variant="contained" onClick={handleClose}>
+            
+            <Button
+              variant="contained"
+              onClick={handleClose}>
               Fechar
             </Button>
-          </>
+          </S.ContainerModal>
         </Modal>
       </S.Wrapper>
     </S.Container>

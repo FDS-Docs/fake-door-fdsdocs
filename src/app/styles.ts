@@ -99,7 +99,7 @@ export const Description = styled.div`
     >h1{
       color: #FFFFFF;
       font-weight: bold;
-      font-size: 48px;
+      font-size: 38px;
       line-height: normal;
       font-family: ${nunitoSans.style.fontFamily}, sans-serif;
     }
@@ -191,7 +191,6 @@ export const Form = styled.div`
   }
 `;
 
-
 export const FormDescription = styled.div`
     width: 100%;
     height: auto;
@@ -207,4 +206,46 @@ export const FormDescription = styled.div`
     line-height: 1.125rem;
     font-family: ${nunitoSans.style.fontFamily}, sans-serif;
   }
+`
+
+export const ContainerModal = styled.div`
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    max-width: 500px;
+    
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0,0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+    >img{
+      width: 160px;
+      height: auto;
+    }
+
+    >h2{
+      color: #212429;
+      font-weight: bold;
+      font-size: 1.625rem;
+      line-height: 1.625rem;
+      font-family: ${nunitoSans.style.fontFamily}, sans-serif;
+    }
+
+    >p{
+      color: #212429;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.125rem;
+      font-family: ${nunitoSans.style.fontFamily}, sans-serif;
+    }
 `
