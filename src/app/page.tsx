@@ -26,10 +26,37 @@ export default function Home() {
     setNome(trimmedNome);
 
     if (validateFields(nome, email, whatsapp, setErrors)) {
-      setShowModal(true);
-      console.log({ nome: trimmedNome, email, whatsapp });
+      handleSubscribe();
     }
   };
+
+  const handleSubscribe = async () => {
+    try {
+
+        const headers = { 'apiKey': process.env.REACT_APP_API_KEY };
+
+        const payload = {
+          nome: nome, 
+          email: email,
+          whatsapp: whatsapp
+        };
+
+        console.log(payload)
+
+        setShowModal(true);
+
+        // const response = await api.post(`/subscribe`, payload, { headers });
+
+        // if (response.data) {
+        //   setShowModal(true);
+
+        //   console.log("sucesso")
+        // }
+
+    } catch (error) {
+      console.log("error")
+    }
+};
 
   const handleClose = () => setShowModal(false);
 
