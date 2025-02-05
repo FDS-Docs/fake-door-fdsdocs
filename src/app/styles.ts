@@ -89,7 +89,7 @@ export const Description = styled.div`
     background-color: transparent;
 
     >span{
-      color: #4bff4a;
+      color: #36d8ff;
       font-weight: bold;
       font-size: 20px;
       line-height: 1.625rem;
@@ -224,7 +224,7 @@ export const ContainerModal = styled.div`
     align-items: center;
     flex-direction: column;
     
-    border-radius: 8px;
+    border-radius: 1rem;
     background-color: #FFFFFF;
     box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0,0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 

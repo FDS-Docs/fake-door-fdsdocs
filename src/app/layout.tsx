@@ -4,17 +4,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sistema de Emissão e Gerenciamento de Documentos de Segurança",
+  title: "FDS Docs",
+  icons: 'logo-fds-docs.svg',
   description:
     "Simplifique a criação de Fichas de Dados de Segurança (FDS), Fichas de Emergência e Rótulos GHS com nosso sistema completo para sua empresa.",
-  keywords: "FDS, Ficha de Dados de Segurança, GHS, documentos de segurança, gestão de documentos",
-  authors: [{ name: "Nome da sua empresa", url: "https://seusite.com" }],
+  keywords: "FDS Docs, FDS Docs sistema, FDS documentos",
+  authors: [{ 
+      name: "FDS Docs", 
+      url: "https://fake-door-fdsdocs.vercel.app/" 
+      }],
   openGraph: {
     title: "Sistema de Emissão e Gerenciamento de Documentos de Segurança",
     description:
       "Simplifique a criação de Fichas de Dados de Segurança (FDS), Fichas de Emergência e Rótulos GHS com nosso sistema completo para sua empresa.",
     images: ["/logo-fds-docs.svg"],
-    url: "https://seusite.com",
+    url: "https://fake-door-fdsdocs.vercel.app/",
   },
 };
 
